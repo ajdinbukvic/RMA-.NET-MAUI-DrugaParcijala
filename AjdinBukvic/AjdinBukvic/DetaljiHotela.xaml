@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AjdinBukvic.DetaljiHotela"
+             Title="DetaljiHotela">
+    <VerticalStackLayout BackgroundColor="White">
+        <Image x:Name="slika" HeightRequest="400" Margin="0,-80,0,0"></Image>
+        <Frame WidthRequest="120" HorizontalOptions="Center" Margin="0,-100,0,0"
+               BackgroundColor="White" BorderColor="Transparent">
+            <Label x:Name="cijena" TextColor="Red" HorizontalTextAlignment="Center" FontSize="20" />
+        </Frame>
+        <VerticalStackLayout Padding="10" Spacing="10">
+            <Label x:Name="naziv" TextColor="Black" FontAttributes="Bold" FontSize="Title"/>
+            <Label x:Name="kratkiopis" TextColor="DimGray"/>
+            <Label x:Name="adresa" TextColor="LightGray"/>
+        </VerticalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="50">
+            <Label x:Name="sobe" TextColor="Black"/>
+            <Label x:Name="ponuda" TextColor="Black"/>
+            <Label x:Name="udaljenost" TextColor="Black"/>
+        </HorizontalStackLayout>
+        <Label Text="Description" TextColor="Black" Padding="10" FontAttributes="Bold"></Label>
+        <Label x:Name="opis" TextColor="Black" Padding="20"/>
+        <Button Text="Offer detalis" BackgroundColor="OrangeRed" TextColor="White"
+                WidthRequest="300"
+                HeightRequest="60"
+                CornerRadius="20"
+                Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
